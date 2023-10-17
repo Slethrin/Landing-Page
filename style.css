@@ -1,0 +1,203 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Style the body */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    
+    background-color:rgb(177, 168, 168);
+}
+
+/* Style the header */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.logo h1 {
+    font-size: 24px;
+}
+
+.nav-links li {
+    list-style: none;
+    display: inline;
+    margin-right: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+/* Style the hero section */
+.hero {
+    background-position: center;
+    width:100%;
+}
+
+.hero-text h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.hero-text p {
+    font-size: 18px;
+    margin-bottom: 30px;
+    text-align:center;
+    color: #fff;
+}
+
+/* Style the about section */
+.about {
+    max-width: 800px;
+    background-color:rgb(177, 168, 168);
+    margin: 0 auto;
+    padding: 40px;
+}
+
+.about h2 {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.Features {
+    
+    background-color: lightgrey;
+    max-width:100%;
+    text-align: center;
+    height:auto;
+    
+}
+#tm{
+    font-size: 40px;
+    font-weight: bold;
+}
+.Feature {
+    border: 5px solid black ;
+    box-shadow: 0px 0px 6px 4px rgb(94, 97, 99);
+    border-radius: 10px;
+    max-width: 400px;
+    margin: auto;
+    margin-bottom: 50px;
+    margin-top: 10px;
+
+}
+.Feature>img {
+    display:flex;
+    justify-content:center;
+    width:100%;
+}
+
+.Feature h3 {
+    font-size: 24px;
+    margin-top: 20px;
+}
+
+
+
+#contact{
+    background-image: linear-gradient(to top right, #2857a4, #403066);
+    height:auto;
+    text-align: center;}
+   #cm{
+    font-size: 40px;
+    font-weight: bolder;
+   }
+.box{
+    width:100%;
+    min-width: 725px;
+  margin-bottom: 1rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content:space-around;
+  /* font-size: 1.25em;   */
+}
+.box1{
+    flex-basis: 40%;
+    overflow-x: hidden;
+    width:50% ;
+    position:relative;
+    /* right:23%; */
+}
+.box1 .Input {
+    width: 100%;
+  margin-bottom: .8rem;
+  padding-left: 1rem;
+  border: none;
+  height: 2.5rem;
+  font-size: 0.8em;
+  color: white;
+  border-bottom: 2px solid white;
+  background-color: #0000;
+  
+}
+textarea .Input{
+   height:4rem ;
+   font-size: 0.8rem;
+   resize:none ;
+}
+.Input:focus{
+    
+  border-bottom: 3px solid #bebebe;
+}
+#submit {
+    background: none;
+    display: block;
+    margin: 2rem auto;
+    font-size: 0.75em;
+    border:2px solid white ;
+    padding: 0.5rem 1rem;
+    /* text-decoration: n; */
+    }
+    .box2{
+        width:50%; 
+         flex-basis: 45%;
+        overflow-x: hidden;
+    margin-top: 0rem;
+    }
+    .box2 h2 ,.box2 div{
+        margin: 0.8rem 0 ; 
+    }
+    .box2 div, .box2 p{
+        font-size: 0.8rem;
+    }
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+    }
+
+    nav {
+        justify-content: space-around;
+    }
+
+    .hero-text h1 {
+        font-size: 36px;
+    }
+
+    .hero-text p {
+        font-size: 16px;
+    }
+
+   
+}
